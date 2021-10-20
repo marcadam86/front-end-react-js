@@ -1,38 +1,96 @@
-.App {
-  text-align: center;
+.top-header-wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.top-header-wrapper img{
+    width: 150px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.top-header-wrapper ul{
+    display: flex;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.top-header-wrapper ul li {
+    list-style-type: none;
+    margin: 8px;
 }
 
-.App-link {
-  color: #61dafb;
+.top-header-wrapper ul li a{
+    text-transform: uppercase;
+    font-weight: bolder;
+    text-decoration: none;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.upper-footer{
+    display: flex;
+    justify-content: center;
+}
+
+.lower-footer{
+    display: flex;
+    justify-content: space-around;
+}
+
+.lower-footer ul li {
+    list-style-type: none;
+    margin: 8px 0;
+}
+
+.lower-footer ul li a{
+    text-decoration: none;
+    color: rgb(29, 27, 27);
+}
+
+.lower-footer ul li a img{
+    width: 200px;
+}
+
+.lower-footer ul li a:hover{
+    text-decoration: underline;
+}
+
+.nav-item .nav-link{
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.p-detail .btn{
+    border-radius: 0%;
+}
+
+.overlay{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.sidebar-wrapper{
+    position: fixed;
+    right: 0;
+    width: 25%;
+    background-color: #fff;
+    height: 100%;
+
+}
+
+.sidebar-head{
+    display: flex;
+    background-color: #222;
+    width: 100%;
+    padding: 4px 0;
+    justify-content: space-around;
+    align-items: center;
+
+}
+.sidebar-head .head-item h3{
+    color: #fff;
+}
+
+.sidebar-head .head-item h4{
+    color: #fff;
 }
